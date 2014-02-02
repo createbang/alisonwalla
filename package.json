@@ -1,0 +1,13 @@
+{
+  "name": "alisonwalla",
+  "dependencies": {
+    "load-grunt-tasks": "~0.3.0",
+    "underscore": "1.5.2"
+  },
+  "devDependencies": {
+    "grunt-contrib-sass": "~0.7.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-uglify": "~0.3.2"
+  }
+}
