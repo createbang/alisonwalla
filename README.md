@@ -1,7 +1,5 @@
 # alisonwalla.com
 
-=======
-
 ## Development
 
 This application uses Grunt for development.  Run the following to start watching `.scss` and `.js` files:
