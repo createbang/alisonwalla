@@ -1,0 +1,90 @@
+/**
+
+   @site__header
+--------------------------------------------------------
+  _5_sections/site__header.scss
+--------------------------------------------------------
+
+  site__wide header
+
+------------------------------------------------------ */
+
+.site__header {
+  @include clearfix();
+  border-bottom: 1px solid $color__white;
+}
+
+
+
+
+
+/* @branding
+--------------------------------------------------------
+
+  The logo & (optional) wordmark
+
+  This would be setup like this
+
+  <a href="/" class="branding">
+    <img src="logo.svg" class="branding__logo" alt="My Company">
+    <h1 class="branding__wordmark">My Company</h1>
+  </a>
+
+------------------------------------------------------ */
+
+.branding {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+  @include bp-at-least($breakpoint__sm){
+    float: left;
+    width: auto;
+    margin: 0;
+  }
+}
+
+.branding__logo {
+
+}
+
+.branding__wordmark {
+  height: 3rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: $color__black;
+  margin: 0;
+}
+
+
+
+
+
+
+/* @site__nav
+--------------------------------------------------------
+
+  Main Site Navigation
+
+------------------------------------------------------ */
+
+.site__nav {
+  ul {
+    display: block;
+    li {
+      display: inline-block;
+      a {
+        display: block;
+        padding: 0 1rem;
+        color: $color__black;
+        height: 3rem;
+        line-height: 3rem;
+        opacity: 1;
+        &:hover {
+          opacity: .5;
+        }
+      }
+    }
+  }
+}

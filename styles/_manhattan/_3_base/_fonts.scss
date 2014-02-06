@@ -1,0 +1,65 @@
+/**
+
+  @fonts
+--------------------------------------------------------
+  _3_elements/fonts.scss
+--------------------------------------------------------
+
+  Define the fonts used in this app and declare variables
+  to be used in your CSS.
+
+  If you are using a webfont, see the _1_foundations/_mixins.scss
+  file for deets on the font embed mixin that is used to
+  embed webfonts.
+
+-------------------------------------------------------- */
+
+
+
+
+
+
+/* @brand
+--------------------------------------------------------
+
+  Use $brand for this font
+
+------------------------------------------------------ */
+
+
+@include embed-font("dharma-gothic-m-regular", "/fonts/dharma-gothic-m-regular");
+$brand: 'dharma-gothic-m-regular', sans-serif;
+
+
+
+/* @sans
+--------------------------------------------------------
+
+   use $sans for this font
+   It's a google font, and we're using 300, 400 and 700 for the font weights.
+
+------------------------------------------------------ */
+
+// @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
+
+$sans: 'Source Sans Pro', helvetica, sans-serif;
+$sans__weight--light: 300;
+$sans__weight--regular: 400;
+$sans__weight--bold: 700;
+
+
+
+
+
+/* @serif
+--------------------------------------------------------
+
+  Use $serif for this font
+
+-------------------------------------------------------- */
+
+$serif: georgia, times;
+
+
+
+
