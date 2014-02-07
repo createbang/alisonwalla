@@ -14,7 +14,10 @@
 --------------------------------------------------------- */
 
 .island {
-  padding: 5.625em 0;
+  padding: 2.5em 0;
+  @include bp-at-least($breakpoint__md){
+    padding: 5.625em 0;
+  }
 }
 
 .island--dark {

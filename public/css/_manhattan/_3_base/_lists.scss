@@ -51,3 +51,61 @@ ol {
   margin-left: 0;
   list-style-type: none;
 }
+
+
+
+
+
+
+
+/* @resume list
+--------------------------------------------------------
+  Resume list
+------------------------------------------------------ */
+
+.list--resume {
+  width: auto;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 75%;
+  @include bp-at-least($breakpoint__sm){
+    font-size: 100%;
+  }
+  @include bp-at-least($breakpoint__lg){
+    font-size: 125%;
+  }
+  li {
+    margin-bottom: 1em;
+  }
+  h2 {
+    font-size: (32/16)*1em;
+    font-weight: $sans__weight--regular;
+  }
+  h3 {
+    font-size: (18/16)*1em;
+    font-weight: $sans__weight--bold;
+    letter-spacing: .05em;
+    small {
+      font-size: .85em;
+      font-style: italic;
+    }
+  }
+  h4 {
+    font-size: 1em;
+    letter-spacing: .05em;
+    color: $color__grey--dark;
+    margin-bottom: .75em;
+  }
+  li li {
+    list-style: disc;
+    font-size: .75em;
+    letter-spacing: .05em;
+    color: $color__grey--dark;
+    margin-left: 1em;
+    margin-bottom: .25em;
+    small {
+      font-size: .85em;
+      font-style: italic;
+    }
+  }
+}

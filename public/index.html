@@ -43,12 +43,12 @@
 
   <!--[if lt IE 9]>
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <script src="/scripts/selectivizr-min.js"></script>
-  <script src="/scripts/respond.js"></script>
+  <script src="/scripts/lib/selectivizr-min.js"></script>
+  <script src="/scripts/lib/respond.js"></script>
   <![endif]-->
 
   <!-- Modernizer -->
-  <script src="/scripts/modernizr.js"></script>
+  <script src="/scripts/lib/modernizr.js"></script>
 
 
   </head>
@@ -89,8 +89,12 @@
               </div>
               <div class="g md-three-eighths">
                 <h1 class="heading--left">Intro</h1>
-                <h2>Hello!</h2>
+                <h2 class="heading--dark">Hello!</h2>
                 <p>This is the online presence of Alison Phillips. Alison is an actress, baker, and the most beautiful woman in the whole world. Her husband Michael can prove it. Also, her dog Rupert will bite you if you disagree. But why would you disagree? It’s pretty clear Alison is simply the best.</p>
+                <ul class="row">
+                  <li><a href="mailto:alison@alisonphillips.com"><i class="icon icon--disc entypo">&#9993;</i></a></li>
+                  <li><a href="http://instagram.com/alisonwalla"><i class="icon icon--disc entypo--social">&#62253;</i></a></li>
+                  <li><a href="http://twitter.com/alisonwalla"><i class="icon icon--disc entypo--social">&#62217;</i></a></li>
               </div>
             </div>
           </div>
@@ -99,23 +103,120 @@
 
         <!-- About -->
         <section id="about" class="island island--medium">
-          <div class="container">
+          <div class="container container--skinny">
             <h1>About</h1>
+            <h2 class="heading--centered heading--bottom-margin">A brief history of Alison</h2>
+            <div class="text-cols--two">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nibh mauris, gravida quis nulla at, consequat vehicula dolor. Nam adipiscing, justo non sodales semper, urna erat tempor mi, non varius sapien felis eu diam. Fusce feugiat metus vel dolor tincidunt, nec molestie dolor sollicitudin. Morbi nec rutrum justo, non tincidunt justo. Nunc rutrum tellus sit amet urna elementum, sed vestibulum tellus viverra. Sed eleifend ante sit amet ipsum hendrerit, id rutrum nunc scelerisque. Donec rhoncus metus tortor, id gravida augue tempus sed. Ut vestibulum dapibus tortor in fringilla. Aliquam ut enim nisl.</p>
+              <p>Suspendisse orci nisi, venenatis ac purus nec, commodo tristique nulla. Etiam in lectus vitae justo pellentesque porttitor id et eros. Aenean porta vestibulum condimentum. Nam ac sapien porttitor felis eleifend facilisis non eu arcu. Nulla eu leo est. Aliquam consequat orci sed leo ullamcorper sollicitudin. Ut et diam nisl. Cras eu magna et quam imperdiet fringilla sit amet eu quam. Sed metus felis, sollicitudin non metus a, posuere bibendum nunc. Sed consequat nulla dolor, sit amet laoreet elit viverra ut. Aliquam hendrerit sem sit amet quam commodo, eu laoreet augue tempus. Integer mauris mauris, suscipit vel sodales ut, convallis at nunc. Mauris at fermentum felis, id interdum lectus.</p>
+              <p>Suspendisse orci nisi, venenatis ac purus nec, commodo tristique nulla. Etiam in lectus vitae justo pellentesque porttitor id et eros. Aenean porta vestibulum condimentum. Nam ac sapien porttitor felis eleifend facilisis non eu arcu. Nulla eu leo est. Aliquam consequat orci sed leo ullamcorper sollicitudin. Ut et diam nisl. Cras eu magna et quam imperdiet fringilla sit amet eu quam. Sed metus felis, sollicitudin non metus a, posuere bibendum nunc. Sed consequat nulla dolor, sit amet laoreet elit viverra ut. Aliquam hendrerit sem sit amet quam commodo, eu laoreet augue tempus. Integer mauris mauris, suscipit vel sodales ut, convallis at nunc. Mauris at fermentum felis, id interdum lectus.</p>
+            </div>
           </div>
         </section>
 
         <!-- Gallery -->
         <section id="gallery" class="island island--dark">
           <div class="container">
-            <h1>Gallery</h1>
+            <div class="gw">
+              <div class="g md-five-eighths">
+                <img id="gallery_current" src="/images/headshot.jpg">
+              </div>
+              <div class="g md-three-eighths">
+                <h1 class="heading--left">Gallery</h1>
+                <div class="gw gw--micro three-up sm-six-up md-three-up lg-three-up js-gallery-thumbs">
+                  <div class="g">
+                    <a href="/images/headshot.jpg" class="js-gallery-thumbnail"><img src="/images/thumbnail.jpg"></a>
+                </div>
+                <div class="g">
+                    <a href="/images/headshot.jpg" class="js-gallery-thumbnail"><img src="/images/thumbnail.jpg"></a>
+                </div>
+                <div class="g">
+                    <a href="/images/headshot.jpg" class="js-gallery-thumbnail"><img src="/images/thumbnail.jpg"></a>
+                </div>
+                <div class="g">
+                    <a href="/images/headshot.jpg" class="js-gallery-thumbnail"><img src="/images/thumbnail.jpg"></a>
+                </div>
+                <div class="g">
+                    <a href="/images/headshot.jpg" class="js-gallery-thumbnail"><img src="/images/thumbnail.jpg"></a>
+                </div>
+                <div class="g">
+                    <a href="/images/headshot.jpg" class="js-gallery-thumbnail"><img src="/images/thumbnail.jpg"></a>
+                </div>
+                <div class="g">
+                    <a href="/images/headshot.jpg" class="js-gallery-thumbnail"><img src="/images/thumbnail.jpg"></a>
+                </div>
+                <div class="g">
+                    <a href="/images/headshot.jpg" class="js-gallery-thumbnail"><img src="/images/thumbnail.jpg"></a>
+                </div>
+                <div class="g">
+                    <a href="/images/headshot.jpg" class="js-gallery-thumbnail"><img src="/images/thumbnail.jpg"></a>
+                </div>
+                <div class="g">
+                    <a href="/images/headshot.jpg" class="js-gallery-thumbnail"><img src="/images/thumbnail.jpg"></a>
+                </div>
+                <div class="g">
+                    <a href="/images/headshot.jpg" class="js-gallery-thumbnail"><img src="/images/thumbnail.jpg"></a>
+                </div>
+                <div class="g">
+                    <a href="/images/headshot.jpg" class="js-gallery-thumbnail"><img src="/images/thumbnail.jpg"></a>
+                </div>
+              </div>
           </div>
         </section>
 
 
         <!-- Resume -->
         <section id="resume" class="island">
-          <div class="container">
+          <div class="container container--super-skinny">
             <h1>Resume</h1>
+            <ul class="list--resume">
+              <li>
+                <h2>2008</h2>
+                <h3>A Tale Of Two Cities <small>(Broadway)</small></h3>
+                <h4>Original Broadway Production</h4>
+                <ul>
+                  <li>Ensemble</li>
+                  <li>Seamstress <small>(understudy)</small></li>
+                </ul>
+              </li>
+              <li>
+                <h2>2005</h2>
+                <h3>Children And Art <small>(Broadway)</small></h3>
+                <h4>Stephen Sondheim Tribute Benefit</h4>
+                <ul>
+                  <li>Performer</li>
+                </ul>
+              </li>
+              <li>
+                <h2>2004</h2>
+                <h3>Fiddler On The Room <small>(Broadway)</small></h3>
+                <h4>Broadway Revival</h4>
+                <ul>
+                  <li>Shprintze <small>(Replacement)</small></li>
+                  <li>Chava <small>(understudy) (Replacement)</small></li>
+                </ul>
+              </li>
+              <li>
+                <h2>2002</h2>
+                <h3>Into The Woods <small>(Broadway)</small></h3>
+                <h4>Broadway Revival</h4>
+                <ul>
+                  <li>Lucinda <small>(understudy) (replacement)</small></li>
+                  <li>Rapunzel <small>(understudy) (replacement)</small></li>
+                  <li>Cinderella <small>(understudy) (replacement)</small></li>
+                  <li>Florinda <small>(understudy) (replacement)</small></li>
+                  <li>Little Red Riding Hood <small>(understudy) (replacement)</small></li>
+                </ul>
+              </li>
+              <li>
+                <h2>2001</h2>
+                <h3>Watch Your Step <small>(Off-Broadway)</small></h3>
+                <h4>Musicals Tonight! Concert</h4>
+                <ul>
+                  <li>Performer</li>
+                </ul>
+              </li>
+
           </div>
         </section>
 
@@ -146,7 +247,9 @@
 
     </div><!--/site -->
 
-    <script src="/app.js"></script>
+    <script src="/scripts/lib/jquery.js"></script>
+    <script src="/scripts/plugins/jquery.manhattan.smartResize.js"></script>
+    <script src="/scripts/app/global.js"></script>
 
   </body>
 

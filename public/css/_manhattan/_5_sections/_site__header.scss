@@ -14,6 +14,11 @@
   .container {
     position: relative;
   }
+  // Reduce overall font sizes
+  font-size: 80%;
+  @include bp-at-least($breakpoint__lg){
+    font-size: 100%;
+  }
 }
 
 
@@ -44,7 +49,7 @@
 }
 
 .branding__logo {
-  width: auto;
+  width: 20em;
 }
 
 .branding__wordmark {

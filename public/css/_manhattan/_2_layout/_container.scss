@@ -23,3 +23,11 @@
   max-width: 70.875em;   // restricts width
   padding: 0 2rem;      // adds padding on viewports less than the max-width
 }
+
+.container--skinny {
+  max-width: 49em;
+}
+
+.container--super-skinny {
+  max-width: 31em;
+}

@@ -41,17 +41,13 @@ h1 {
   max-width: 22em;
   display: block;
   margin: 0 auto 1em;
-  &.heading--left {
-    text-align: left;
-    max-width: 100%;
-  }
 }
 
 
 // H2
 h2 {
   font-size: 2.5em;
-  color: $color__black;
+  color: $color__grey--light;
   font-style: italic;
 }
 
@@ -86,3 +82,30 @@ h6 {
 
 
 
+
+
+
+
+
+/* @heading mods
+--------------------------------------------------------
+  Modifiers for headings
+------------------------------------------------------ */
+
+
+.heading--left {
+  text-align: left;
+  max-width: 100%;
+}
+
+.heading--centered {
+  text-align: center;
+}
+
+.heading--bottom-margin {
+  margin-bottom: 1em;
+}
+
+.heading--dark {
+  color: $color__black;
+}

@@ -102,6 +102,26 @@
 
 
 
+/* @micro grids
+--------------------------------------------------------
+  Grids with smaller gutters
+------------------------------------------------------ */
+
+.grid-wrap--micro,
+.gw--micro {
+  @include bp-at-least($grid__float-at){
+    margin: 0 -.5*$grid__padding;
+  }
+  .grid,
+  .g {
+    padding: 0 .5*$grid__padding $grid__padding;
+  }
+}
+
+
+
+
+
 /* @table grids
 --------------------------------------------------------
 
