@@ -2107,6 +2107,10 @@ h6 {
 .heading--bottom-margin {
   margin-bottom: 1em; }
 
+@media screen and (max-width: 47em) {
+  .heading--small-mobile {
+    font-size: 1em; } }
+
 .heading--dark {
   color: #06262d; }
 
