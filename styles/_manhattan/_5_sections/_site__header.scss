@@ -37,6 +37,7 @@
   display: block;
   width: 100%;
   text-align: center;
+  color: red;
   @include bp-at-least($breakpoint__sm){
     float: left;
     width: auto;

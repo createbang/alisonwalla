@@ -46,7 +46,7 @@ module.exports = function( grunt ) {
         files: [ 'styles/screen.scss' ],
         tasks: [ 'sass' ]
       },
-      sass: {
+      scripts: {
         files: [ 'scripts/**/*.js' ],
         tasks: [ 'concat', 'uglify' ]
       }
