@@ -3361,8 +3361,7 @@ button,
   <i class="icon icon--close">&times;</i>
 
 ------------------------------------------------------ */
-.icon, .carousel__prev,
-.carousel__next {
+.icon {
   color: inherit;
   display: inline-block;
   font-style: normal;
@@ -3628,24 +3627,88 @@ button,
   and also different color themes
 
 ------------------------------------------------------ */
-.carousel {
-  position: relative; }
+/*
+ * jQuery FlexSlider v1.8
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+  outline: none; }
 
-.carousel__direction-nav li {
-  float: left; }
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
 
-.carousel__prev,
-.carousel__next {
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden; }
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {
+  max-width: 100%;
+  display: block; }
+
+.flex-pauseplay span {
+  text-transform: capitalize; }
+
+/* Clearfix for the .slides element */
+.slides:after {
+  content: ".";
   display: block;
-  text-align: center; }
-  .carousel__prev:hover,
-  .carousel__next:hover {
-    opacity: 1; }
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
 
-/* Have something else to add?
---------------------------------------------------------
-  + Add any new modifier classes below
------------------------------------------------------- */
+html[xmlns] .slides {
+  display: block; }
+
+* html .slides {
+  height: 1%; }
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {
+  display: block; }
+
+.carousel {
+  position: relative;
+  margin-top: 3.5em; }
+
+.flex-control-nav.flex-control-paging {
+  text-align: center; }
+  .flex-control-nav.flex-control-paging li {
+    display: inline-block; }
+  .flex-control-nav.flex-control-paging li a {
+    margin: 0 .25em;
+    text-indent: 100%;
+    display: block;
+    height: .5em;
+    width: .5em;
+    background: #c6c6c6;
+    border-radius: 50%;
+    opacity: .5; }
+    .flex-control-nav.flex-control-paging li a.flex-active {
+      opacity: 1; }
+
 /**
 
    @dropdowns
@@ -4081,10 +4144,13 @@ button,
 
 ------------------------------------------------------ */
 .site__footer {
-  padding: 1em 0 2em; }
+  text-align: center;
+  color: #bcbcbc;
+  border-top: 1px solid #c6c6c6;
+  padding: 1em 0; }
 
 .site__credits {
-  font-size: .75rem; }
+  font-size: 1em; }
 
 /* @pages
 --------------------------------------------------------

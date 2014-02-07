@@ -12,6 +12,7 @@ $(function(){
 
   // Resize gallery thumbs
   // ----------------------------------------------------
+
   function resizeGalleryThumbs() {
     if ($(window).width() > 768) {
       var el = $(".js-gallery-thumbs"),
@@ -31,11 +32,42 @@ $(function(){
     }
   }
 
-  // Initialize Gallery Thumbs
+  // Initialize Resize Gallery Thumbs
   $(window).smartresize(function(){
     resizeGalleryThumbs();
   });
   resizeGalleryThumbs();
+
+
+
+  // Gallery Functionality
+  // ----------------------------------------------------
+
+  $(".js-gallery-thumbnail").on("click", function(e){
+    e.preventDefault();
+    $("#gallery_current").attr("src", $(this).attr("href"));
+  });
+
+
+
+
+  // FitVids
+  // ----------------------------------------------------
+
+  $(".site").fitVids();
+
+
+
+
+
+
+  // Carousels
+  // ----------------------------------------------------
+
+  $(".carousel").flexslider({
+    slideshow: false,
+    animation: "slide"
+  });
 
 
 });

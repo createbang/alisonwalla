@@ -12,47 +12,33 @@
 
 ------------------------------------------------------ */
 
+// Flexslider
+@import "../../_vendor/flexslider";
+
+
 .carousel {
   position: relative;
-  // Add custom styles below...
-
-}
-.carousel__title {
-  // Add custom styles below...
-
-
+  margin-top: 3.5em;
 }
 
-.carousel__direction-nav {
-  // Add custom styles below...
-
-  li {
-    float: left;
-  }
-}
-
-.carousel__prev,
-.carousel__next {
-  @extend .icon;
-  display: block;
+.flex-control-nav.flex-control-paging {
   text-align: center;
-  // Add custom styles below...
-
-  &:hover {
-    opacity: 1;
+  li {
+    display: inline-block;
+  }
+  li a {
+    margin: 0 .25em;
+    text-indent: 100%;
+    display: block;
+    height: .5em;
+    width: .5em;
+    background: $color__grey;
+    border-radius: 50%;
+    opacity: .5;
+    &.flex-active {
+      opacity: 1;
+    }
   }
 }
-
-
-
-
-
-
-/* Have something else to add?
---------------------------------------------------------
-  + Add any new modifier classes below
------------------------------------------------------- */
-
-
 
 
