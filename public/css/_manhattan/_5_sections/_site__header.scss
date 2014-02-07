@@ -11,7 +11,9 @@
 
 .site__header {
   @include clearfix();
-  border-bottom: 1px solid $color__white;
+  .container {
+    position: relative;
+  }
 }
 
 
@@ -35,26 +37,17 @@
 .branding {
   position: relative;
   display: block;
-  width: 100%;
+  width: auto;
+  margin: (30/16)*1em auto (12/16)*1em;
   text-align: center;
-  @include bp-at-least($breakpoint__sm){
-    float: left;
-    width: auto;
-    margin: 0;
-  }
+
 }
 
 .branding__logo {
-
+  width: auto;
 }
 
 .branding__wordmark {
-  height: 3rem;
-  line-height: 3rem;
-  text-transform: uppercase;
-  font-size: 2rem;
-  color: red;
-  margin: 0;
 }
 
 
@@ -70,20 +63,44 @@
 ------------------------------------------------------ */
 
 .site__nav {
+  border-bottom: 1px solid $color__grey--medium;
   ul {
     display: block;
+    text-align: center;
     li {
       display: inline-block;
       a {
         display: block;
-        padding: 0 1rem;
-        color: $color__black;
-        height: 3rem;
-        line-height: 3rem;
+        padding: 0 .5em 1em;
+        font-size: 1.125em;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+        color: $color__grey--light;
         opacity: 1;
         &:hover {
           opacity: .5;
         }
+      }
+    }
+    @include bp-at-least($breakpoint__md) {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      -webkit-transform: translateY(-50%);
+      display: block;
+      width: 100%;
+      li:nth-child(1),
+      li:nth-child(2) {
+        float: left;
+      }
+      li:nth-child(3),
+      li:nth-child(4) {
+        float: right;
+      }
+      li a {
+        padding: 1em;
       }
     }
   }

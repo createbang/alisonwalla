@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
 /****
 
   MAIN STYLESHEET for Manhattan
@@ -1900,7 +1901,13 @@ table {
 
 --------------------------------------------------------- */
 .island {
-  margin-bottom: 5%; }
+  padding: 5.625em 0; }
+
+.island--dark {
+  background: #06262d; }
+
+.island--medium {
+  background: whitesmoke; }
 
 /***
 
@@ -1930,18 +1937,6 @@ table {
   embed webfonts.
 
 -------------------------------------------------------- */
-/* @brand
---------------------------------------------------------
-
-  Use $brand for this font
-
------------------------------------------------------- */
-@font-face {
-  font-family: "dharma-gothic-m-regular";
-  src: url("/fonts/dharma-gothic-m-regular.eot");
-  /* IE9 Compat Modes */
-  src: url("/fonts/dharma-gothic-m-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/dharma-gothic-m-regular.woff") format("woff"), url("/fonts/dharma-gothic-m-regular.ttf") format("truetype"), url("/fonts/dharma-gothic-m-regular.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
 /* @sans
 --------------------------------------------------------
 
@@ -1984,12 +1979,12 @@ html {
 
 ------------------------------------------------------ */
 body {
-  font-family: "Source Sans Pro", helvetica, sans-serif;
+  font-family: "PT Sans", helvetica, sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  color: #010101; }
+  color: #06262d; }
 
 /**
 
@@ -2015,21 +2010,33 @@ body {
 
 ------------------------------------------------------ */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  font-family: "dharma-gothic-m-regular", sans-serif;
-  text-transform: uppercase;
-  margin-bottom: .25em; }
+  font-weight: normal; }
 
 h1 {
-  font-size: 3em;
-  line-height: 1.05; }
+  font-size: 1.0625em;
+  letter-spacing: .025em;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #c6c6c6;
+  padding-top: 1em;
+  border-top: 1px solid #dddddd;
+  text-align: center;
+  max-width: 22em;
+  display: block;
+  margin: 0 auto 1em; }
+  h1.heading--left {
+    text-align: left;
+    max-width: 100%; }
 
 h2 {
-  font-size: 2.75em;
-  margin-top: .75em; }
+  font-size: 2.5em;
+  color: #06262d;
+  font-style: italic; }
 
 h3 {
-  font-size: 2.5em; }
+  font-size: 1.5em;
+  color: #6e6e6e; }
 
 h4 {
   font-size: 2.25em; }
@@ -2060,12 +2067,11 @@ h6 {
 
 --------------------------------------------------------  */
 p {
+  font-size: 1.25em;
+  line-height: 1.5;
   margin-bottom: 1rem; }
   p:last-of-type, p:only-of-type {
     margin: 0; }
-  @media screen and (min-width: 64em) {
-    p {
-      font-size: 1.15em; } }
 
 /* @inline
 --------------------------------------------------------
@@ -2078,7 +2084,7 @@ p {
 -------------------------------------------------------- */
 b,
 strong {
-  font-weight: bold; }
+  font-weight: 700; }
 
 i,
 em {
@@ -2087,7 +2093,7 @@ em {
 .fancy-ampersand {
   font-size: 1.05em;
   text-align: middle;
-  font-family: "Source Sans Pro", helvetica, sans-serif;
+  font-family: "PT Sans", helvetica, sans-serif;
   font-style: italic; }
 
 /**
@@ -2186,6 +2192,8 @@ blockquote {
 -------------------------------------------------------- */
 ul,
 ol {
+  font-size: 1.25em;
+  line-height: 1.5;
   padding-left: 0;
   margin-left: 0;
   list-style-type: none; }
@@ -3128,8 +3136,8 @@ button,
   display: inline-block;
   border: none;
   vertical-align: middle;
-  border: 1px solid #010101;
-  background: #010101;
+  border: 1px solid #06262d;
+  background: #06262d;
   color: white;
   padding: 1em;
   font-size: .85rem;
@@ -3142,7 +3150,7 @@ button,
   button:hover, button:focus,
   .btn:hover,
   .btn:focus {
-    color: #010101;
+    color: #06262d;
     background: white; }
 
 /* @btn--large
@@ -4148,7 +4156,7 @@ button,
 ------------------------------------------------------ */
 .hero {
   position: relative;
-  background: #010101;
+  background: #06262d;
   max-height: 28em;
   overflow: hidden; }
 
@@ -4295,7 +4303,7 @@ button,
     padding: .5em;
     font-size: .95em; }
     .thumbnail .thumbnail__caption h4 {
-      color: #272727;
+      color: #c6c6c6;
       margin: 0 0 .25em 0;
       line-height: 1; }
     .thumbnail .thumbnail__caption p {
@@ -4365,7 +4373,7 @@ button,
 .well {
   padding: 2em;
   background: rgba(0, 0, 0, 0.025);
-  border: 1px solid #010101; }
+  border: 1px solid #06262d; }
 
 /**
 
@@ -4455,13 +4463,14 @@ button,
 
 ------------------------------------------------------ */
 .site__header {
-  zoom: 1;
-  border-bottom: 1px solid white; }
+  zoom: 1; }
   .site__header:before, .site__header:after {
     content: " ";
     display: table; }
   .site__header:after {
     clear: both; }
+  .site__header .container {
+    position: relative; }
 
 /* @branding
 --------------------------------------------------------
@@ -4479,21 +4488,12 @@ button,
 .branding {
   position: relative;
   display: block;
-  width: 100%;
+  width: auto;
+  margin: 1.875em auto 0.75em;
   text-align: center; }
-  @media screen and (min-width: 34.375em) {
-    .branding {
-      float: left;
-      width: auto;
-      margin: 0; } }
 
-.branding__wordmark {
-  height: 3rem;
-  line-height: 3rem;
-  text-transform: uppercase;
-  font-size: 2rem;
-  color: #010101;
-  margin: 0; }
+.branding__logo {
+  width: auto; }
 
 /* @site__nav
 --------------------------------------------------------
@@ -4501,19 +4501,41 @@ button,
   Main Site Navigation
 
 ------------------------------------------------------ */
-.site__nav ul {
-  display: block; }
-  .site__nav ul li {
-    display: inline-block; }
-    .site__nav ul li a {
-      display: block;
-      padding: 0 1rem;
-      color: #010101;
-      height: 3rem;
-      line-height: 3rem;
-      opacity: 1; }
-      .site__nav ul li a:hover {
-        opacity: .5; }
+.site__nav {
+  border-bottom: 1px solid #dddddd; }
+  .site__nav ul {
+    display: block;
+    text-align: center; }
+    .site__nav ul li {
+      display: inline-block; }
+      .site__nav ul li a {
+        display: block;
+        padding: 0 .5em 1em;
+        font-size: 1.125em;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+        color: #bcbcbc;
+        opacity: 1; }
+        .site__nav ul li a:hover {
+          opacity: .5; }
+    @media screen and (min-width: 48em) {
+      .site__nav ul {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+        display: block;
+        width: 100%; }
+        .site__nav ul li:nth-child(1),
+        .site__nav ul li:nth-child(2) {
+          float: left; }
+        .site__nav ul li:nth-child(3),
+        .site__nav ul li:nth-child(4) {
+          float: right; }
+        .site__nav ul li a {
+          padding: 1em; } }
 
 /* @site__main
 --------------------------------------------------------
@@ -4559,7 +4581,7 @@ button,
 
 ------------------------------------------------------ */
 .page {
-  background: #f1f1f1;
+  background: whitesmoke;
   zoom: 1;
   padding-top: 2em; }
   .page:before, .page:after {
@@ -4574,7 +4596,7 @@ button,
 .page__section {
   padding-bottom: 3em;
   margin: 0 0 3em;
-  border-bottom: 1px solid #272727; }
+  border-bottom: 1px solid #c6c6c6; }
   @media screen and (min-width: 34.375em) {
     .page__section {
       margin: 0 0 3em; } }
@@ -4602,7 +4624,7 @@ button,
   bottom: 0;
   left: 1em;
   right: 1em;
-  background: #ebebeb;
+  background: #bcbcbc;
   text-align: center;
   padding: 1em; }
   .feature iframe {
@@ -4610,4 +4632,4 @@ button,
 
 .separate--top {
   padding-top: 2em;
-  border-top: 1px solid #ebebeb; }
+  border-top: 1px solid #bcbcbc; }

@@ -1,0 +1,88 @@
+/**
+
+  @headings
+--------------------------------------------------------
+  _3_elements/headings.scss
+--------------------------------------------------------
+
+  We set any base styles for any headings that have
+  no classnames.
+
+  Note: Often, we'll use bold fonts, and if a bold font
+        has font-weight: bold it looks terrible.  In
+        this case, use font-weight: normal;
+
+  Example: Headings
+  <h1>This is an h1 heading</h1>
+  <h2>This is an h2 heading</h2>
+  <h3>This is an h3 heading</h3>
+  <h4>This is an h4 heading</h4>
+  <h5>This is an h5 heading</h5>
+  <h6>This is an h6 heading</h6>
+
+------------------------------------------------------ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+
+// H1
+h1 {
+  font-size: 1.0625em; // 17px
+  letter-spacing: .025em;
+  line-height: 1;
+  font-weight: $sans__weight--bold;
+  text-transform: uppercase;
+  color: $color__grey;
+  padding-top: 1em;
+  border-top: 1px solid $color__grey--medium;
+  text-align: center;
+  max-width: 22em;
+  display: block;
+  margin: 0 auto 1em;
+  &.heading--left {
+    text-align: left;
+    max-width: 100%;
+  }
+}
+
+
+// H2
+h2 {
+  font-size: 2.5em;
+  color: $color__black;
+  font-style: italic;
+}
+
+
+
+// H3
+h3 {
+  font-size: 1.5em;
+  color: $color__grey--dark;
+}
+
+
+
+// H4
+h4 {
+  font-size: 2.25em;
+}
+
+
+
+// H5
+h5 {
+  font-size: 2em;
+}
+
+
+
+// H6
+h6 {
+  font-size: 1.75em;
+}
+
+
+
