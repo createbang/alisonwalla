@@ -2290,13 +2290,18 @@ ol {
       font-size: 125%; } }
   .list--resume li {
     margin-bottom: 1em; }
-  .list--resume h2 {
-    font-size: 2em;
-    font-weight: 400; }
+  .list--resume ul {
+    margin-top: 0; }
+  .list--resume > li > h2 {
+    line-height: 1.4em;
+    font-size: 1.6em;
+    font-weight: 400;
+    margin-top: 1.4em; }
   .list--resume h3 {
     font-size: 1.125em;
     font-weight: 700;
-    letter-spacing: .05em; }
+    letter-spacing: .05em;
+    margin-top: 1.4em; }
     .list--resume h3 small {
       font-size: .85em;
       font-style: italic; }
@@ -2304,7 +2309,7 @@ ol {
     font-size: 1em;
     letter-spacing: .05em;
     color: #6e6e6e;
-    margin-bottom: .75em; }
+    margin-bottom: .4em; }
   .list--resume li li {
     list-style: disc;
     font-size: .75em;

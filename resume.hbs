@@ -1,0 +1,18 @@
+{{#each .}}
+  <li>
+    <h2>{{category}}</h2>
+    {{#each experience}}
+      {{#if ../television}}
+        <h3>{{production.name}} <small>({{venue.name}})</small></h3>
+      {{else}}
+        <h3>{{production.name}}</h3>
+        <h4>{{venue.name}}</h4>
+      {{/if}}
+      <ul>
+        {{#each roles}}
+          <li>{{name}} {{#if type}}<small>({{type}})</small>{{/if}}</li>
+        {{/each}}
+      </ul>
+    {{/each}}
+  </li>
+{{/each}}

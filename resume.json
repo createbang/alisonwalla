@@ -1,0 +1,332 @@
+[
+  {
+    "category": "Television",
+    "television": true,
+    "experience": [
+      {
+        "production": {
+          "name": "elementary"
+        },
+        "venue": {
+          "name": "CBS",
+          "type": "tv"
+        },
+        "roles": [
+          {
+            "name": "Co-Star"
+          }
+        ],
+        "directors": [
+          {
+            "name": "Rosemary Rodriguez",
+            "role": "Director"
+          }
+        ]
+      },
+      {
+        "production": {
+          "name": "numbers"
+        },
+        "venue": {
+          "name": "CBS",
+          "type": "tv"
+        },
+        "roles": [
+          {
+            "name": "Co-Star"
+          }
+        ],
+        "directors": [
+          {
+            "name": "Steve Boyum",
+            "role": "Director"
+          }
+        ]
+      },
+      {
+        "production": {
+          "name": "law & order"
+        },
+        "venue": {
+          "name": "NBC",
+          "type": "tv"
+        },
+        "roles": [
+          {
+            "name": "Co-Star"
+          }
+        ],
+        "directors": [
+          {
+            "name": "Darnell Martin",
+            "role": "Director"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Broadway/National Tour",
+    "experience": [
+      {
+        "production": {
+          "name": "A tale of two cities"
+        },
+        "venue": {
+          "name": "The Hirschfeld Theater",
+          "type": "theater"
+        },
+        "roles": [
+          {
+            "name": "Ensemble"
+          },
+          {
+            "name": "The Seamstress",
+            "type": "understudy"
+          }
+        ],
+        "directors": [
+          {
+            "name": "Warren Carlyle",
+            "role": "Director"
+          },
+          {
+            "name": "Kevin Stites",
+            "role": "Musical Director"
+          }
+        ]
+      },
+      {
+        "production": {
+          "name": "Fiddler on the roof"
+        },
+        "venue": {
+          "name": "National Tour",
+          "type": "travel"
+        },
+        "roles": [
+          {
+            "name": "Chava"
+          }
+        ],
+        "directors": [
+          {
+            "name": "Sammy Dallas Bayes",
+            "role": "Director"
+          }
+        ]
+      },
+      {
+        "production": {
+          "name": "Fiddler on the roof"
+        },
+        "venue": {
+          "name": "The Minskoff Theater",
+          "type": "theater"
+        },
+        "roles": [
+          {
+            "name": "Shprintze"
+          },
+          {
+            "name": "Chava",
+            "type": "understudy"
+          }
+        ],
+        "directors": [
+          {
+            "name": "David Leveaux",
+            "role": "Director"
+          },
+          {
+            "name": "Kevin Stites",
+            "role": "Musical Director"
+          }
+        ]
+      },
+      {
+        "production": {
+          "name": "A little night music"
+        },
+        "venue": {
+          "name": "New York City Opera",
+          "type": "theater"
+        },
+        "roles": [
+          {
+            "name": "Anne",
+            "type": "understudy"
+          },
+          {
+            "name": "Fredrika",
+            "type": "understudy"
+          }
+        ],
+        "directors": [
+          {
+            "name": "Scott Ellis",
+            "role": "Director"
+          },
+          {
+            "name": "Paul Gemignani",
+            "role": "Musical Director"
+          }
+        ]
+      },
+      {
+        "production": {
+          "name": "Into the woods"
+        },
+        "venue": {
+          "name": "The Broadhurst Theater",
+          "type": "theater"
+        },
+        "roles": [
+          {
+            "name": "Cinderella",
+            "type": "understudy"
+          },
+          {
+            "name": "Rapunzel",
+            "type": "understudy"
+          },
+          {
+            "name": "Little Red Ridinghood",
+            "type": "understudy"
+          },
+          {
+            "name": "Florinda",
+            "type": "understudy"
+          },
+          {
+            "name": "Lucinda",
+            "type": "understudy"
+          }
+        ],
+        "directors": [
+          {
+            "name": "James Lapine",
+            "role": "Director"
+          },
+          {
+            "name": "Paul Gemignani",
+            "role": "Musical Director"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Regional Theater",
+    "experience": [
+      {
+        "production": {
+          "name": "A wonderful life"
+        },
+        "venue": {
+          "name": "The John W. Engeman Theater",
+          "type": "theater"
+        },
+        "roles": [
+          {
+            "name": "Mary Hatch"
+          }
+        ],
+        "directors": [
+          {
+            "name": "John Simpkins",
+            "role": "Director"
+          },
+          {
+            "name": "James Cunningham",
+            "role": "Musical Director"
+          }
+        ]
+      },
+      {
+        "production": {
+          "name": "The Sound of Music"
+        },
+        "venue": {
+          "name": "The John W. Engeman Theater",
+          "type": "theater"
+        },
+        "roles": [
+          {
+            "name": "Maria"
+          }
+        ],
+        "directors": [
+          {
+            "name": "Paul Stancato",
+            "role": "Director"
+          },
+          {
+            "name": "Mike Pettry",
+            "role": "Musical Director"
+          }
+        ]
+      },
+      {
+        "production": {
+          "name": "Guys and Dolls"
+        },
+        "venue": {
+          "name": "The Maltz-Jupiter Theater",
+          "type": "theater"
+        },
+        "roles": [
+          {
+            "name": "Sarah Brown"
+          }
+        ],
+        "directors": [
+          {
+            "name": "Danny Pelzig",
+            "role": "Director"
+          }
+        ]
+      },
+      {
+        "production": {
+          "name": "Arcadia"
+        },
+        "venue": {
+          "name": "TheaterWorks/Palo Alto",
+          "type": "theater"
+        },
+        "roles": [
+          {
+            "name": "Thomasina"
+          }
+        ],
+        "directors": [
+          {
+            "name": "Robert Kelly",
+            "role": "Director"
+          }
+        ]
+      },
+      {
+        "production": {
+          "name": "Very good eddie"
+        },
+        "venue": {
+          "name": "The Goodspeed Opera House",
+          "type": "theater"
+        },
+        "roles": [
+          {
+            "name": "Elsie Darling"
+          }
+        ],
+        "directors": [
+          {
+            "name": "B.T. McNicholl",
+            "role": "Director"
+          }
+        ]
+      }
+    ]
+  },
+]

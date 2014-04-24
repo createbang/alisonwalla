@@ -68,23 +68,31 @@ ol {
   margin: 0 auto;
   text-transform: uppercase;
   font-size: 75%;
-  @include bp-at-least($breakpoint__sm){
+  @include bp-at-least($breakpoint__sm) {
     font-size: 100%;
   }
-  @include bp-at-least($breakpoint__lg){
+  @include bp-at-least($breakpoint__lg) {
     font-size: 125%;
   }
   li {
     margin-bottom: 1em;
   }
-  h2 {
-    font-size: (32/16)*1em;
-    font-weight: $sans__weight--regular;
+  ul {
+    margin-top: 0;
+  }
+  > li {
+    > h2 {
+      line-height: (32/16)*.7em;
+      font-size: (32/16)*.8em;
+      font-weight: $sans__weight--regular;
+      margin-top: 1.4em;
+    }
   }
   h3 {
     font-size: (18/16)*1em;
     font-weight: $sans__weight--bold;
     letter-spacing: .05em;
+    margin-top: (32/16)*.7em;
     small {
       font-size: .85em;
       font-style: italic;
@@ -94,7 +102,7 @@ ol {
     font-size: 1em;
     letter-spacing: .05em;
     color: $color__grey--dark;
-    margin-bottom: .75em;
+    margin-bottom: .4em;
   }
   li li {
     list-style: disc;

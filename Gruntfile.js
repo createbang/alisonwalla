@@ -14,7 +14,7 @@ module.exports = function( grunt ) {
 
     sass: {
       main: {
-        files: { 'public/screen.css': 'styles/screen.scss' }
+        files: { 'public/css/screen.css': 'public/css/screen.scss' }
       }
     },
 
@@ -43,7 +43,7 @@ module.exports = function( grunt ) {
 
     watch: {
       sass: {
-        files: [ 'styles/screen.scss' ],
+        files: [ 'public/css/**/*.scss' ],
         tasks: [ 'sass' ]
       },
       scripts: {

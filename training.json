@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Acting Instruction",
+    "instructors": [
+      {
+        "name": "Lee Brock",
+        "company": "Barrow Group"
+      },
+      {
+        "name": "Roger Cilley"
+      }
+    ]
+  },
+  {
+    "name": "Voice Instruction",
+    "instructors": [
+      {
+        "name": "Joyce Hall"
+      },
+      {
+        "name": "David Yoss, PhD"
+      },
+      {
+        "name": "Beverly Rinaldi, M.M.",
+        "company": "Cleveland Institute of Music, Interlochen Center for the Arts"
+      }
+    ]
+  },
+  {
+    "name": "Vocal Coaching",
+    "instructors": [
+      {
+        "name": "Tom Helm"
+      },
+      {
+        "name": "Dan Gettinger"
+      },
+      {
+        "name": "Darren Cohen"
+      }
+    ]
+  }
+]
